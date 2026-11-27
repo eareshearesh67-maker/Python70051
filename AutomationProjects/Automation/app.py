@@ -2,7 +2,7 @@ from flask import Flask, jsonify
 import json
 import os
 
-file_path = os.path.join(os.path.dirname(__file__), 'C:/PythonProject\config\equipment.json')
+file_path = os.path.join(os.path.dirname(__file__), 'C:\PythonProject\config\equipment.json')
 with open(file_path, 'r') as f:
     equipment = json.load(f)
 app=Flask(__name__)
