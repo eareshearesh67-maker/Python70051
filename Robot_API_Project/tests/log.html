@@ -2091,31 +2091,31 @@ storage = function () {
 window.output = {};
 </script>
 <script type="text/javascript">
-window.output["suite"] = [1,2,3,0,[],[1,0,300],[],[[4,0,0,[],[],[1,259,27],[[0,5,6,0,7,8,0,[],[1,259,0],[]],[0,9,10,0,0,0,11,[],[1,259,19],[[0,12,13,0,14,15,11,[],[1,259,19],[[277,2,16],[277,2,17],[278,2,18]]],[8,0,0,0,0,11,0,[],[1,278,0],[]],[278,2,18]]],[0,19,6,0,20,21,22,[],[1,279,2],[[280,2,23]]],[0,24,6,0,25,26,0,[],[1,281,1],[[281,2,27]]],[0,28,6,0,29,30,0,[],[1,282,1],[[284,2,31]]]]],[32,0,0,[],[],[1,286,13],[[0,5,6,0,7,33,0,[],[1,287,0],[]],[0,34,10,0,0,35,11,[],[1,288,7],[[0,12,13,0,14,36,11,[],[1,288,6],[[293,2,37],[294,2,38],[294,2,18]]],[8,0,0,0,0,11,0,[],[1,294,0],[]],[295,2,18]]],[0,19,6,0,20,21,22,[],[1,295,1],[[296,2,39]]],[0,24,6,0,25,26,0,[],[1,297,0],[[297,2,27]]],[0,24,6,0,25,40,0,[],[1,297,1],[[298,2,27]]]]]],[[1,41,10,0,0,0,0,[],[1,259,0],[[0,42,13,0,43,44,0,[],[1,259,0],[[259,2,45]]]]]],[2,2,0,0]];
+window.output["suite"] = [1,2,3,0,[],[0,0,80,4],[],[[5,0,0,[],[],[0,81,0,6],[]],[7,0,0,[],[],[0,81,0,6],[]]],[[1,8,9,0,0,0,0,[],[0,71,10],[[0,10,0,0,0,11,0,[],[0,71,0],[[71,5,12]]]]]],[2,0,2,0]];
 </script>
 <script type="text/javascript">
 window.output["strings"] = [];
 </script>
 <script type="text/javascript">
-window.output["strings"] = window.output["strings"].concat(["*","*Test 2","*C:\\PythonProject\\Robot_API_Project\\tests\\test_2.robot","*test_2.robot","*TC1_GETAll","*Log To Console","*BuiltIn","*<p>Logs the given message to the console.\x3c/p>","*Test1 Started","*Get ALL Equipment","*equipment_Keyword","*${response}","*GET On Session","*RequestsLibrary","*<p>Sends a GET request on a previously created HTTP Session.\x3c/p>","*equipment_API    /api/equipment    expected_status=200","*GET Request : url=http://127.0.0.1:5010/api/equipment \n path_url=/api/equipment \n headers={'User-Agent': 'python-requests/2.34.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} \n body=None \n ","*GET Response : url=http://127.0.0.1:5010/api/equipment \n status=200, reason=OK \n headers={'Server': 'Werkzeug/3.1.9 Python/3.12.10', 'Date': 'Fri, 27 Nov 2026 09:56:45 GMT', 'Content-Type': 'application/json', 'Content-Length': '151', 'Connection': 'close'} \n body=[{\"id\":101,\"name\":\"Flight control unit\",\"status\":\"Operational\",\"type\":\"FCU\"},{\"id\":102,\"name\":\"Navigation System\",\"status\":\"Operational\",\"type\":\"NS\"}]\n \n ","*${response} = &lt;Response [200]&gt;","*Set Variable","*<p>Returns the given values which can then be assigned to a variable.\x3c/p>","*${response.json()}","*${data}","*${data} = [{'id': 101, 'name': 'Flight control unit', 'status': 'Operational', 'type': 'FCU'}, {'id': 102, 'name': 'Navigation System', 'status': 'Operational', 'type': 'NS'}]","*Should Be Equal As Integers","*<p>Fails if objects are unequal after converting them to integers.\x3c/p>","*${response.status_code}    200","*Argument types are:\n&lt;class 'int'&gt;\n&lt;class 'str'&gt;","*Length Should Be","*<p>Verifies that the length of the given item is correct.\x3c/p>","*${data}    2","*Length is 2.","*TC1_GETBYID","*Test2 Started","*GET Equipment by id","*101    200","*equipment_API    /api/equipment/${equipment_id}    expected_status=${expected_status}","*GET Request : url=http://127.0.0.1:5010/api/equipment/101 \n path_url=/api/equipment/101 \n headers={'User-Agent': 'python-requests/2.34.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} \n body=None \n ","*GET Response : url=http://127.0.0.1:5010/api/equipment/101 \n status=200, reason=OK \n headers={'Server': 'Werkzeug/3.1.9 Python/3.12.10', 'Date': 'Fri, 27 Nov 2026 09:56:45 GMT', 'Content-Type': 'application/json', 'Content-Length': '76', 'Connection': 'close'} \n body={\"id\":101,\"name\":\"Flight control unit\",\"status\":\"Operational\",\"type\":\"FCU\"}\n \n ","*${data} = {'id': 101, 'name': 'Flight control unit', 'status': 'Operational', 'type': 'FCU'}","*${data}[id]    101","*Create API Session","*Create Session","*<p>Create Session: create a HTTP session to a server\x3c/p>","*Equipment_API    ${BASE_URL}","*Creating Session using : alias=Equipment_API, url=http://127.0.0.1:5010, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 "]);
+window.output["strings"] = window.output["strings"].concat(["*","*Test 2","*C:\\PythonProject\\Robot_API_Project\\tests\\test_2.robot","*test_2.robot","*Suite setup failed:\nNo keyword with name 'Create Session' found. Did you mean:\n    equipment_Keyword.Create API Session","*TC1_GETAll","*Parent suite setup failed:\nNo keyword with name 'Create Session' found. Did you mean:\n    equipment_Keyword.Create API Session","*TC1_GETBYID","*Create API Session","*equipment_Keyword","*Create Session","*Equipment_API    ${BASE_URL}","*No keyword with name 'Create Session' found. Did you mean:\n    equipment_Keyword.Create API Session","eNqNkDFPw0AMhff8Cm+BgUqULVsFrVoRQlRlQYoUXS5uOLg7B58jFH49FygsSC2b9fk9+9lrZmIwHg7GIqS3WV1O8ky+ZHpBLfWeWpJmVe6aX4KBRtYYanwbzeDQS3OP0ztxt+BjLwXyYI1HWGawcwOxGN9H0rLiCdJ9tGKQkH+DFA4qru8yeKButFiQbGj03XoOl0FB4L44eOWw+2tPKlYaW6Vf4cJREGDUMRZoZS1YFeQySyCO8ZiUT9X2sShX1XZG/zhX5kVHKVPPysEmZg1H4831sh5+qsWHGU5L7/L8zLB400nBWXcdjODVEJ+hegyfFCmpEg=="]);
 </script>
 <script type="text/javascript">
-window.output["stats"] = [[{"elapsed":"00:00:00","fail":0,"label":"All Tests","pass":2,"skip":0}],[],[{"elapsed":"00:00:00","fail":0,"id":"s1","label":"Test 2","name":"Test 2","pass":2,"skip":0}]];
+window.output["stats"] = [[{"elapsed":"00:00:00","fail":2,"label":"All Tests","pass":0,"skip":0}],[],[{"elapsed":"00:00:00","fail":2,"id":"s1","label":"Test 2","name":"Test 2","pass":0,"skip":0}]];
 </script>
 <script type="text/javascript">
-window.output["errors"] = [];
+window.output["errors"] = [[71,4,13]];
 </script>
 <script type="text/javascript">
-window.output["baseMillis"] = 1795773405114;
+window.output["baseMillis"] = 1795845846241;
 </script>
 <script type="text/javascript">
-window.output["generated"] = 324;
+window.output["generated"] = 98;
 </script>
 <script type="text/javascript">
 window.output["expand_keywords"] = null;
 </script>
 <script type="text/javascript">
-window.settings = {"defaultLevel":"INFO","minLevel":"INFO","reportURL":"report.html","rpa":false,"splitLogBase":"log","title":""};
+window.settings = {"defaultLevel":"INFO","minLevel":"FAIL","reportURL":"report.html","rpa":false,"splitLogBase":"log","title":""};
 </script>
 <title></title>
 </head>

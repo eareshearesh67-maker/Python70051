@@ -1,21 +1,15 @@
 from flask import Flask, jsonify
 import json
 import os
-
-file_path = os.path.join(os.path.dirname(__file__), 'C:\PythonProject\config\equipment.json')
+file_path = os.path.join(os.path.dirname(__file__), 'C:/PythonProject/Config/equipment.json')
 with open(file_path, 'r') as f:
     equipment = json.load(f)
 app=Flask(__name__)
 
-app = Flask(__name__)
-
-
-
+ 
 @app.get("/api/equipment")
 def get_equipment():
     return jsonify(list(equipment.values())), 200
-
-
 
 @app.get("/api/equipment/<int:equipment_id>")
 def get_equipment_by_id(equipment_id):
@@ -24,6 +18,5 @@ def get_equipment_by_id(equipment_id):
         return jsonify(equipment_item), 200
     else:
         return jsonify({"error":"Equipment not found"}), 404
- 
 if __name__=="__main__":
-    app.run(port=5010,debug=False)   
+    app.run(port=5015,debug=False)

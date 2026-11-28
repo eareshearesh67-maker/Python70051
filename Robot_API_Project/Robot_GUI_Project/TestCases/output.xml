@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.5.1 (Python 3.12.10 on win32)" generated="2026-11-28T00:15:05.180375" rpa="false" schemaversion="5">
+<robot generator="Robot 7.5.1 (Python 3.12.10 on win32)" generated="2026-11-28T18:47:28.037860" rpa="false" schemaversion="5">
 <suite id="s1" name="Login" source="C:\PythonProject\Robot_API_Project\Robot_GUI_Project\TestCases\login.robot">
 <test id="s1-t1" name="Verify Login Functionality" line="9">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-11-28T00:15:06.007733" level="INFO">Opening browser 'Chrome' to base url 'http://www.amazon.com/'.</msg>
+<msg time="2026-11-28T18:47:28.792772" level="INFO">Opening browser 'Chrome' to base url 'http://www.amazon.com/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-11-28T00:15:06.007733" elapsed="3.859897"/>
+<status status="PASS" start="2026-11-28T18:47:28.792772" elapsed="3.726534"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-11-28T00:15:09.868630" elapsed="0.038010"/>
+<status status="PASS" start="2026-11-28T18:47:32.519306" elapsed="0.029007"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-11-28T00:15:19.914472" level="INFO">Slept 10 seconds.</msg>
+<msg time="2026-11-28T18:47:42.548831" level="INFO">Slept 10 seconds.</msg>
 <arg>10s</arg>
 <doc>Pauses execution for the given time.</doc>
-<status status="PASS" start="2026-11-28T00:15:09.912634" elapsed="10.001838"/>
+<status status="PASS" start="2026-11-28T18:47:32.548313" elapsed="10.000518"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-11-28T00:15:19.916481" level="INFO">Typing text 'Laptop' into text field 'id=twotabsearchtextbox'.</msg>
+<msg time="2026-11-28T18:47:42.550842" level="INFO">Typing text 'Laptop' into text field 'id=twotabsearchtextbox'.</msg>
 <arg>id=twotabsearchtextbox</arg>
 <arg>Laptop</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-11-28T00:15:19.915469" elapsed="0.179293"/>
+<status status="PASS" start="2026-11-28T18:47:42.548831" elapsed="0.146267"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-11-28T00:15:30.097354" level="INFO">Slept 10 seconds.</msg>
+<msg time="2026-11-28T18:47:52.696568" level="INFO">Slept 10 seconds.</msg>
 <arg>10s</arg>
 <doc>Pauses execution for the given time.</doc>
-<status status="PASS" start="2026-11-28T00:15:20.095766" elapsed="10.001588"/>
+<status status="PASS" start="2026-11-28T18:47:42.695098" elapsed="10.001470"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-11-28T00:15:30.098380" level="INFO">Clicking element 'id=nav-search-submit-button'.</msg>
+<msg time="2026-11-28T18:47:52.696568" level="INFO">Clicking element 'id=nav-search-submit-button'.</msg>
 <arg>id=nav-search-submit-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-11-28T00:15:30.098380" elapsed="2.320974"/>
+<status status="PASS" start="2026-11-28T18:47:52.696568" elapsed="2.407893"/>
 </kw>
-<status status="PASS" start="2026-11-28T00:15:05.997755" elapsed="26.421599"/>
+<status status="PASS" start="2026-11-28T18:47:28.790771" elapsed="26.313690"/>
 </test>
-<status status="PASS" start="2026-11-28T00:15:05.190414" elapsed="27.229935"/>
+<status status="PASS" start="2026-11-28T18:47:28.039849" elapsed="27.066612"/>
 </suite>
 <statistics>
 <total>

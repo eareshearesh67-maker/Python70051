@@ -1,21 +1,14 @@
-equipment = {
-    101: {
+{
+    "101": {
         "id": 101,
-        "name": "Flight control unit",
+        "name": "Flight Control Unit",
         "type": "FCU",
         "status": "Operational"
     },
-    102: {
-        "id": 102,
-        "name": "Navigation System",
-        "type": "NS",
-        "status": "Operational"
-    },
-    103: {
+    "102": {
         "id": 102,
         "name": "Navigation System",
         "type": "NS",
         "status": "Operational"
     }
-
 }
