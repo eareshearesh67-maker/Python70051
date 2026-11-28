@@ -24,7 +24,7 @@ pipeline {
 stage('Start Flask Application') {
     steps {
         bat '''
-        cd /d "%WORKSPACE%\\AutomationProjects\\Automation
+        cd /d "%WORKSPACE%\\AutomationProjects\\Automation"
         start "FlaskApp" /B python new_app.py'
         '''
     }
