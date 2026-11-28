@@ -21,15 +21,12 @@ pipeline {
             }
         }
 
-        stage('Start Flask Application') {
-            steps {
-                bat '''
-                start "FlaskApp" /B python app.py
-                '''
-
-                bat 'timeout /t 10'
-            }
-        }
+stage('Start Flask Application') {
+    steps {
+        bat 'start "FlaskApp" /B python AutomationProjects\\Automation\\app.py'
+        sleep(time: 10, unit: 'SECONDS')
+    }
+}
 
         stage('Execute API Test') {
             steps {
