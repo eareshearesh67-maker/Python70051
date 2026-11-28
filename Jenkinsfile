@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        APP_URL = 'http://127.0.0.1:5015'
+        APP_URL = 'http://127.0.0.1:5010'
     }
 
     stages {
@@ -16,7 +16,6 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                echo 'Installing Dependencies'
                 bat 'python -m pip install --upgrade pip'
                 bat 'python -m pip install -r requirements.txt'
             }
@@ -24,8 +23,6 @@ pipeline {
 
         stage('Start Flask Application') {
             steps {
-                echo 'Starting Flask Application'
-
                 bat '''
                 start "FlaskApp" /B python app.py
                 '''
@@ -36,7 +33,6 @@ pipeline {
 
         stage('Execute API Test') {
             steps {
-                echo 'Running Robot Framework Tests'
                 bat 'python -m robot test_2.robot'
             }
         }
@@ -44,16 +40,17 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: '*.xml,*.html,*.log', allowEmptyArchive: true
+            echo 'Pipeline completed'
+
+            archiveArtifacts artifacts: '*.html,*.xml,*.log', allowEmptyArchive: true
         }
 
         success {
-            echo 'Pipeline Executed Successfully'
+            echo 'Build Successful'
         }
 
         failure {
-            echo 'Pipeline Failed'
+            echo 'Build Failed'
         }
     }
 }
-
